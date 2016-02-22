@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+		<title>Last Night's Drinks</title>
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="An exercise guide for party people.">
+	</head>
+	<body>
+		<header class="#top">
+			<div class="wrapper">
+				<h1>Last Night's Drinks</h1>
+				<p>An exercise guide for party people.</p>
+				<div class="imgContainer">
+					<img src="" alt="illustration of alcohol glasses and containers">
+				</div><!-- .imgContainer -->
+				<a href="#questions" class="smoothScroll"><i class="fa fa-angle-down"></i></a>
+			</div><!-- .wrapper -->
+		</header>
+		<section class="questions" id="questions">
+			<div class="wrapper">
+				<form>
+					<fieldset id="beverage">
+						<h2>What was your drink of choice last night?</h2>
+						<div class="buttons clearfix">
+							<div class="btn">
+								<input type="radio" placeholder="beers" value="regular beer" id="beer" name="beverage" class="beverage" required>
+								<label for="beer" class="beverage">Beer</label>
+							</div><!-- .btn -->
+							<div class="btn">
+								<input type="radio" placeholder="light beers" value="light beer" id="lightBeer" name="beverage" class="beverage">
+								<label for="lightBeer" class="beverage">Light Beer</label>
+							</div><!-- .btn -->
+							<div class="btn">
+								<input type="radio" placeholder="glasses of red wine" value="red wine" id="redWine" name="beverage" class="beverage">
+								<label for="redWine" class="beverage">Red Wine</label>
+							</div><!-- .btn -->
+							<div class="btn">
+								<input type="radio" placeholder="glasses of white wine" value="white wine" id="whiteWine" name="beverage" class="beverage">
+								<label for="whiteWine" class="beverage">White Wine</label>	
+							</div><!-- .btn -->
+							<div class="btn">
+								<input type="radio" value="vodka" placeholder="mixed drinks" id="vodka" name="beverage" class="beverage">
+								<label for="vodka" class="beverage">Liquor-based mixed drinks</label>
+							</div><!-- .btn -->
+							<div class="btn">
+								<input type="radio" placeholder="shots" value="rum" id="rum" name="beverage" class="beverage">
+								<label for="rum" class="beverage">Shots</label>
+							</div><!-- .btn -->
+						<!-- i don't remember?? Should that be an option? -->
+						</div><!-- .buttons -->
+					</fieldset><!-- .beverage -->
+					<fieldset id="amount">
+						<h2>How many <span>servings</span> did you drink?</h2>
+						<input type="number" placeholder="servings" id="amount" name="amount" class="item" required>
+						<div class="servingSize">
+							<p class="servingName item"></p>
+							<p class="ml item"></p>
+						</div><!-- .servingSize -->
+					</fieldset>
+					<input type="submit" value="calculate my workout" id="submit">
+				</form>
+			</div><!-- .wrapper -->
+		</section><!-- questions -->
+		<section class="answers" id="answers">
+			<div class="wrapper">
+				<h3 class="calCount">Last night's drinks contained <span></span> calories.</h3>
+				<p class="resultResponse"><span></span> About</p>
+				<p class="exerciseMin"><span></span> minutes</p>
+				<p>worth of cardio exercise will burn off those calories.</p>
+				<p class="circuitDesc"></p>
+				<div class="results clearfix">
+					<div class="exercise e1">
+						<div class="imgContainer">
+							<img src="images/champagne.svg" alt="stick person illustration of activity">
+						</div><!-- imgContainer -->
+						<p class="number"><span></span> minutes of</p>
+						<h4 class="name"></h4>
+					</div><!-- e1 -->
+					<div class="exercise e2">
+						<div class="imgContainer">
+							<img src="images/beer.svg" alt="stick person illustration of activity">
+						</div><!-- imgContainer -->
+						<p class="number"><span></span> minutes of</p>
+						<h4 class="name"></h4>
+					</div><!-- e2 -->
+					<div class="exercise e3">
+						<div class="imgContainer">
+							<img src="images/cheers.svg" alt="stick person illustration of activity">
+						</div><!-- imgContainer -->
+						<p class="number"><span></span> minutes of</p>
+						<h4 class="name"></h4>
+					</div><!-- e3 -->
+					<div class="exercise e4">
+						<img src="images/bottles.svg" alt="stick person illustration of activity">
+						<p class="number"><span></span> minutes of</p>
+						<h4 class="name"></h4>
+					</div><!-- e4 -->
+				</div><!-- results -->
+				<p>Each of these cardio exercises burn approximately 10 calories* per minute.</p>
+				<button class="restart">Restart</button>
+				<div class="finePrint">
+					<p>Powered by <a href="http://www.ars.usda.gov/nutrientdata" target="_blank">USDA Nutrient Database</a>.</p>
+					<p class="disc">* Actual number of calories burned per minute changes based on activity level, height, body weight and gender. This website is for entertainment purposes only. Results should not replace nutritional or medical advice from medical professionals.</p>
+				</div><!--.finePrint -->
+			</div><!-- .wrapper -->
+		</section><!-- .answers -->
+		<footer>
+			<div class="wrapper">
+				<p>Created by <a href="http://allyevice.com" target="_blank">Allye Vice</a></p>
+				<p>Based on an idea by Caroline Vice and Samantha Lyng</p>
+			</div><!-- .wrapper -->
+		</footer>
+			<!-- 
+			dev credits:
+			Icons created by Creative Stall for the Noun Project
+			Arrow down icon by font awesome
+			Smooth scroll by Ariel Flesler
+
+			-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="smoothscroll.js"></script>
+		<script src="script.js"></script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71584069-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

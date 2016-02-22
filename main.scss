@@ -1,0 +1,261 @@
+@import 'setup';
+
+$headerFont: 'Poiret One', cursive;
+$textFont: 'Open Sans', sans-serif;
+$white: #fefdfd;
+$blue: #268BD0;
+$green: #30F0B6;
+$teal: #43F3DE;
+$black: #12061F;
+
+html {
+	font-size: 62.5%;
+	font-size: 10px;
+}
+
+img {
+	fill: $black;
+}
+
+body {
+	text-align: center;
+	font-family: $textFont;
+	font-size: 1.6rem;
+	color: $black;
+	background-color: $white;
+}
+
+a {
+	color: $white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+}
+
+a:focus {
+	outline: inherit;
+}
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header {
+	font-family: $headerFont;
+	background: $blue;
+	h1 {
+		font-size: 5rem;
+		margin: 0;
+	}
+	p {
+		font-size: 3rem;
+	}
+	.wrapper {
+		width: 100%;
+		height: 100vh;
+		padding: 40px;
+	}
+	.imgContainer {
+		width: 100%;
+		padding: 50px;
+		img {
+			height: 200px;
+		}
+	}
+	a .fa {
+		font-size: 80px;
+		color: $black;
+		padding-bottom: 20px;
+	}
+}
+
+section {
+	padding: 20px 0;
+}
+
+.questions, .answers {
+	background: $teal;	
+}
+
+.questions {
+	padding: 10% 0;
+	h2 {
+		margin-top: 0;
+	}
+	fieldset {
+		border: 0;
+		padding: 20px;
+		padding-top: 0;
+		input[type=radio] {
+			display: none;
+		}
+		.btn {
+			float: left;
+			width: 33.3%;
+			padding: 20px 10px;
+		}
+		label {
+			padding: 10px;
+		}
+		input[type=number] {
+			border: 0;
+			width: 80px;
+			padding: 10px;
+			background: inherit;
+		}
+		input::-webkit-input-placeholder {
+			   text-align: center;
+			   color: $white;
+			}
+			input:-moz-placeholder {
+			   text-align: center;
+			   color: $white; 
+			}
+			input::-moz-placeholder {
+			   text-align: center;
+			   color: $white;
+			}
+			input::-ms-input-placeholder {  
+			   text-align: center;
+			   color: $white;
+			}
+		input[type=number]:focus {
+			outline: 0;
+		}
+		input[type=number]::-webkit-inner-spin-button, 
+		input[type=number]::-webkit-outer-spin-button { 
+			-webkit-appearance: none; 
+			margin: 0; 
+		}
+
+		p.item {
+			margin: 0;
+		}
+		
+		p.ml {
+			font-style: italic;
+			font-size: 1rem;
+		}
+	}	
+	input[type=radio]:hover + label {
+		color: black;
+	}
+	input[type=radio]:checked + label {
+		border: 2px solid $black;
+	}
+	fieldset#amount {
+		margin-top: 20px;
+	}
+	input#submit {
+		border: 2px solid $black;
+		background: inherit;
+		padding: 10px;
+		margin-top: 20px;
+	}
+}
+
+.answers {
+	display: none;
+	padding: 10% 0 10px;
+	.exerciseMin {
+		background: $blue;
+		display: inline-block;
+		height: 120px;
+		width: 120px;
+		border-radius: 50%;
+		padding-top: 48px;
+		margin: 0;
+		font-weight: 400;
+	}
+	.results {
+		padding: 20px;
+		width: 100%;
+		.exercise {
+			float: left;
+			width: 25%;
+			img {
+				width: 100px;
+			}
+			.number {
+				margin-bottom: 2px;
+			}
+			h4 {
+				margin-top: 0;
+			}
+		}
+	}
+	.restart {
+		border: 2px solid $black;
+		background: inherit;
+		padding: 10px;
+		margin-top: 5%;
+	}
+	.finePrint {
+		margin-top: 5%;
+		font-size: 1rem;
+	}
+} 	
+
+footer {
+	font-size: 1.2rem;
+	background: $green;
+	padding: 10px;
+}
+
+@media (max-width: 800px) {
+	.questions {
+		fieldset {
+			padding: 0 60px;
+			.btn {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	header {
+		.wrapper {
+			height: auto;
+		}
+	}
+	.answers {
+		.results {
+			.exercise {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.questions {
+		fieldset {
+			.btn {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 490px) {
+	header {
+		h1 {
+			font-size: 3rem;
+		}
+		p {
+			font-size: 2rem;
+		}
+		.imgContainer {
+		width: 100%;
+		padding: 20px;
+		img {
+			height: 150px;
+		}
+	}
+	}
+}
