@@ -16,7 +16,7 @@
 				<h1>Last Night's Drinks</h1>
 				<p>An exercise guide for party people.</p>
 				<div class="imgContainer">
-					<img src="" alt="illustration of alcohol glasses and containers">
+					<img class="svg" src="" alt="illustration of alcohol glasses and containers">
 				</div><!-- .imgContainer -->
 				<a href="#questions" class="smoothScroll"><i class="fa fa-angle-down"></i></a>
 			</div><!-- .wrapper -->
@@ -51,7 +51,7 @@
 								<input type="radio" placeholder="shots" value="rum" id="rum" name="beverage" class="beverage">
 								<label for="rum" class="beverage">Shots</label>
 							</div><!-- .btn -->
-						<!-- i don't remember?? Should that be an option? -->
+						<!-- i don't remember?? Should that be an option? let me know at hello@allyevice.com if you think so! -->
 						</div><!-- .buttons -->
 					</fieldset><!-- .beverage -->
 					<fieldset id="amount">
@@ -62,11 +62,20 @@
 							<p class="ml item"></p>
 						</div><!-- .servingSize -->
 					</fieldset>
-					<input type="submit" value="calculate my workout" id="submit">
+					<input type="submit" value="calculate my workout" id="submit" class="smoothScroll">
 				</form>
 			</div><!-- .wrapper -->
 		</section><!-- questions -->
 		<section class="answers" id="answers">
+			<aside class="loadingScreen">
+				<div class="wrapper">
+					<i class="fa fa-spinner animated infinite rotateIn"></i>
+					<div class="gifContainer">
+						<img class="gif" src="" alt="">
+					</div><!-- .gifContainer -->
+					<p><span>Just hold up</span> - we're calculating your workout.</p>
+				</div>	
+			</aside>
 			<div class="wrapper">
 				<h3 class="calCount">Last night's drinks contained <span></span> calories.</h3>
 				<p class="resultResponse"><span></span> About</p>
@@ -76,27 +85,27 @@
 				<div class="results clearfix">
 					<div class="exercise e1">
 						<div class="imgContainer">
-							<img src="images/champagne.svg" alt="stick person illustration of activity">
+							<img class="svg" src="images/champagne.svg" alt="stick person illustration of activity">
 						</div><!-- imgContainer -->
 						<p class="number"><span></span> minutes of</p>
 						<h4 class="name"></h4>
 					</div><!-- e1 -->
 					<div class="exercise e2">
 						<div class="imgContainer">
-							<img src="images/beer.svg" alt="stick person illustration of activity">
+							<img class="svg" src="images/beer.svg" alt="stick person illustration of activity">
 						</div><!-- imgContainer -->
 						<p class="number"><span></span> minutes of</p>
 						<h4 class="name"></h4>
 					</div><!-- e2 -->
 					<div class="exercise e3">
 						<div class="imgContainer">
-							<img src="images/cheers.svg" alt="stick person illustration of activity">
+							<img class="svg" src="images/cheers.svg" alt="stick person illustration of activity">
 						</div><!-- imgContainer -->
 						<p class="number"><span></span> minutes of</p>
 						<h4 class="name"></h4>
 					</div><!-- e3 -->
 					<div class="exercise e4">
-						<img src="images/bottles.svg" alt="stick person illustration of activity">
+						<img class="svg" src="images/bottles.svg" alt="stick person illustration of activity">
 						<p class="number"><span></span> minutes of</p>
 						<h4 class="name"></h4>
 					</div><!-- e4 -->
@@ -118,8 +127,10 @@
 			<!-- 
 			dev credits:
 			Icons created by Creative Stall for the Noun Project
-			Arrow down icon by font awesome
+			Arrow down and spinning icon by font awesome
+			gifs from giphy.com
 			Smooth scroll by Ariel Flesler
+
 
 			-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
